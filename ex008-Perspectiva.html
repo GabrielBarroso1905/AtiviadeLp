@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Perspective Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .perspective-container {
+            perspective: 800px;
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+
+        .inner-element {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 0, 0);
+            transform: rotateY(80deg);
+            transform-style: preserve-3d;
+            transition: transform 0.5s ease;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -50px;
+            margin-left: -50px;
+        }
+
+        .inner-element:hover {
+            transform: rotateY(0deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Exemplo 9: Perspectiva Interativa</h2>
+        <div class="perspective-container">
+            <div class="inner-element"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transforms Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 10px;
+            transition: transform 0.3s ease;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            transform: scale(1.5) rotate(45deg) translate(50px, 50px) skew(20deg, 10deg);
+        }
+
+        .box:nth-child(2) {
+            background-color: green;
+        }
+
+        .box:nth-child(3) {
+            background-color: orange;
+        }
+
+        .box:nth-child(4) {
+            background-color: purple;
+        }
+
+        .box-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Exemplo 6: Transformações 2D</h2>
+        <div class="box">
+            <div class="box-text">1</div>
+        </div>
+        <div class="box">
+            <div class="box-text">2</div>
+        </div>
+        <div class="box">
+            <div class="box-text">3</div>
+        </div>
+        <div class="box">
+            <div class="box-text">4</div>
+        </div>
+    </div>
+</body>
+
+</html>
