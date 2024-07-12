@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Animações CSS</title>
+    <style>
+        .rotate {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: rotate 4s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .move {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: relative;
+            animation: move 3s ease-in-out infinite;
+        }
+
+        @keyframes move {
+            0% {
+                left: 0;
+            }
+            50% {
+                left: 200px;
+            }
+            100% {
+                left: 0;
+            }
+        }
+
+        .fade {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation: fade 5s ease-in-out infinite;
+        }
+
+        @keyframes fade {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Exemplo: Animações CSS</h2>
+    <div class="container">
+        <div class="rotate"></div>
+        <div class="move"></div>
+        <div class="fade"></div>
+    </div>
+</body>
+
+</html>

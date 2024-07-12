@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Rotações 3D em CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            color: white;
+            transition: transform 0.5s ease;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 150px;
+        }
+
+        .box:hover {
+            transform: rotateX(90deg);
+        }
+
+        .box:nth-child(2):hover {
+            transform: rotateY(90deg);
+        }
+
+        .box:nth-child(3):hover {
+            transform: rotateZ(90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">rotateX(90deg)</div>
+        <div class="box">rotateY(90deg)</div>
+        <div class="box">rotateZ(90deg)</div>
+    </div>
+</body>
+
+</html>

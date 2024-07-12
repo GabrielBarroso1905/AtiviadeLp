@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Transformações 2D</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            display: inline-block;
+            transition: transform 1s ease;
+        }
+
+        .rotate-box {
+            background-color: blue;
+        }
+
+        .rotate-box:hover {
+            transform: rotate(45deg);
+        }
+
+        .scale-box {
+            background-color: red;
+        }
+
+        .scale-box:hover {
+            transform: scale(1.5);
+        }
+
+        .skew-box {
+            background-color: green;
+        }
+
+        .skew-box:hover {
+            transform: skewX(20deg);
+        }
+
+        .translate-box {
+            background-color: purple;
+        }
+
+        .translate-box:hover {
+            transform: translateX(50px);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Exemplos de Transformações 2D</h2>
+    <div class="box rotate-box"></div>
+    <div class="box scale-box"></div>
+    <div class="box skew-box"></div>
+    <div class="box translate-box"></div>
+</body>
+
+</html>

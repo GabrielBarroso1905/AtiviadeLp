@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transições CSS</title>
+    <style>
+        .container {
+            position: relative;
+            height: 350px;
+            width: 350px; 
+                        border: 1px solid black; 
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition-property: background-color, width, height, left, top;
+            transition-duration: 5s, 1s, 1s, 3s, 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.2s;
+        }
+
+        .box:hover {
+            background-color: pink;
+            width: 150px;
+            height: 150px;
+            left: 200px; 
+            top: 200px; 
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Exemplo: Transições CSS com cor, Tamanho e Movimento</h2>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
