@@ -30,12 +30,20 @@
             transform: scale(1.5);
         }
 
-        .skew-box {
+        .skew-x-box {
             background-color: green;
         }
 
-        .skew-box:hover {
+        .skew-x-box:hover {
             transform: skewX(20deg);
+        }
+
+        .skew-y-box {
+            background-color: orange;
+        }
+
+        .skew-y-box:hover {
+            transform: skewY(20deg);
         }
 
         .translate-box {
@@ -45,6 +53,22 @@
         .translate-box:hover {
             transform: translateX(50px);
         }
+
+        .translate-xy-box {
+            background-color: pink;
+        }
+
+        .translate-xy-box:hover {
+            transform: translate(50px, 50px);
+        }
+
+        .matrix-box {
+            background-color: yellow;
+        }
+
+        .matrix-box:hover {
+            transform: matrix(1, 0.5, -0.5, 1, 50, 50);
+        }
     </style>
 </head>
 
@@ -52,8 +76,11 @@
     <h2>Exemplos de Transformações 2D</h2>
     <div class="box rotate-box"></div>
     <div class="box scale-box"></div>
-    <div class="box skew-box"></div>
+    <div class="box skew-x-box"></div>
+    <div class="box skew-y-box"></div>
     <div class="box translate-box"></div>
+    <div class="box translate-xy-box"></div>
+    <div class="box matrix-box"></div>
 </body>
 
 </html>
